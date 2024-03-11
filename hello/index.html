@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styl.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" (click)="login()">
+          Log In
+        </button>
+
+        <button type="button" class="toggle-btn" (click)="register()">
+          Register
+        </button>
+
+      </div>
+      <div class="social-icons">
+
+
+        <i class="ri-menu-3-line"></i>
+
+
+      </div>
+
+      <form action="" id="login" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id " required>
+        <input type="password" class="input-field" placeholder="Enter password " required>
+        <input type="checkbox" class="chek-box">
+        <span>Remember password</span>
+        <button type="submit" class="submit-btn">Log in</button>
+      </form>
+
+
+      <form action="" id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="email " class="input-field" placeholder="Email" required>
+        <input type="text" class="input-field" placeholder="Enter possword">
+        <input type="checkbox" class="chek-box">
+        <span> I agree to the <a href="#"> Terms & services</a></span>
+        <button type="submit" class="submit-btn">Log In</button>
+
+
+      </form>
+    </div>
+  </div>
+  <script src="java.js"></script>
+
+</body>
+
+</html>

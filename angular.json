@@ -22,12 +22,15 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets","src/external_js"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap-grid.min.css",
               "src/styles.css"
+              
+            
             ],
-            "scripts": [],
+            "scripts": [ ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -86,7 +89,8 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/fonts"
             ],
             "styles": [
               "src/styles.css"
@@ -96,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c320a540-c258-4441-b3c6-a3b66cd8f04e"
   }
 }
